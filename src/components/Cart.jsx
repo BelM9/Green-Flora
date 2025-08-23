@@ -1,10 +1,11 @@
 import React from 'react'
+import '../styles/cart.css'
 
 function Cart() {
     const monsteraPrice = 8
     const ivyPrice = 10
     const flowerPrice = 15
-    return (<div>
+    return (<div className='gf-cart'>
         {/*h2+(ul>li*3)+p*/}
         <h2></h2>
         <ul>
