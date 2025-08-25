@@ -14,7 +14,7 @@ function App() {
         */}
 
       <Banner />
-      <Cart />
+      {/* <Cart /> */}
       <ShoppingList />
     </div>
   );
