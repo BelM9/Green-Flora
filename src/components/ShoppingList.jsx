@@ -1,7 +1,7 @@
 import React from 'react'
 import { plantList } from '../datas/plantList'
 import '../styles/ShoppingList.css'
-import CareScale from './CareScale'
+import PlantItem from './PlantItem'
 
 function ShoppingList() {
 
@@ -23,19 +23,18 @@ function ShoppingList() {
             <div>
                 <h2>Plantes</h2>
                 <ul className='gf-plant-list'>
-                    {plantList.map((plant) => (
-                        <li key={plant.id} className='gf-plant-item'>
-                            {plant.isBestSale && <span className="gf-Best-sale">🔥</span>}
-                            {plant.name}
-                            {plant.isSpecialOffer && <div className='gf-sales'>Solde</div>}
-
-                            <CareScale scaleValue={plant.water} careType='water' />
-                            <CareScale scaleValue={plant.light} careType='light' />
-                        </li>
+                    {plantList.map(({ id, cover, name, water, light }) => (
+                        <PlantItem
+                            id={id}
+                            cover={cover}
+                            name={name}
+                            light={light}
+                            water={water}
+                        />
                     ))}
                 </ul>
             </div>
-        </div>
+        </div >
     )
 }
 
