@@ -3,12 +3,8 @@ import CareScale from './CareScale'
 import '../styles/PlantItem.css'
 
 export default function PlantItem({ id, cover, name, water, light }) {
-    function handleClick(plantName) {
-        // console.log(' Ceci est un clic ')
-        alert(`Vous voulez acheter 1 ${plantName} ? Très bon choix `)      }
-      
     return (
-        <li key={id} className='gf-plant-item' onClick={() => handleClick(name)}>
+        <li key={id} className='gf-plant-item'>
             <img className='gf-plant-item-cover' src={cover} alt={`${name} cover`} />
             {name}
             <div>
@@ -17,9 +13,4 @@ export default function PlantItem({ id, cover, name, water, light }) {
             </div>
         </li>
     )
-}
-
-function handleClick(plantName) {
-    /* console.log('Ceci est un clic') */
-    alert(`Vous voulez acheter 1 ${plantName} ? Très bon choix `)
 }

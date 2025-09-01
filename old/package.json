@@ -1,7 +1,7 @@
 {
-  "name": "y",
-  "version": "0.1.6",
-  "private": false,
+  "name": "green-flora",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -35,10 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "pepiniere",
-  "main": "y",
-  "repository": "D:\\React-OCR\\TP6",
-  "author": "B.Moez",
-  "license": "y"
+  }
 }
